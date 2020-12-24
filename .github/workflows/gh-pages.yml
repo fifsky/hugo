@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: | 
           hugo --minify
-          echo "blog.fifsky.com" > ./CNAME
+          echo "blog.fifsky.com" > ./public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
