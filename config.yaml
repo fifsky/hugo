@@ -15,10 +15,9 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
+    title: Doing is better than saying.
     description: "ExampleSite description"
-    author: Me
-    # author: ["Me", "You"] # multiple authors
+    author: fifsky
 
     images: "<link or path of image for opengraph, twitter-cards>"
 
@@ -28,17 +27,10 @@ params:
     defaultTheme: auto
     disableThemeToggle: false
     disableSpecial1stPost: false
-
-    assets:
-        favicon: "<link / abs url>"
-        favicon16x16: "<link / abs url>"
-        favicon32x32: "<link / abs url>"
-        apple_touch_icon: "<link / abs url>"
-        safari_pinned_tab: "<link / abs url>"
-
+ 
     label:
         text: "Home"
-        icon: /static/logo.png
+        icon: /logo.png
         iconHeight: 35
 
     # profile-mode
@@ -66,10 +58,6 @@ params:
         - name: github
           url: "https://github.com/"
 
-    analytics:
-        google:
-            SiteVerificationTag: "XYZabc"
-
 menu:
     main:
         - identifier: categories
@@ -80,7 +68,7 @@ menu:
           name: tags
           url: /tags/
           weight: 20
-        - identifier: example
-          name: example.org
-          url: https://fifsky.org
+        - identifier: fifsky
+          name: fifsky
+          url: https://fifsky.com
           weight: 30
