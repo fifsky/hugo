@@ -2,7 +2,7 @@
 title: "Hello Blog"
 date: 2020-12-24T11:30:03+80:00
 weight: 1
-aliases: ["/first"]
+aliases: ["news"]
 tags: ["first"]
 author: "fifsky"
 showToc: true
