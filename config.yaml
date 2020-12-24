@@ -42,8 +42,8 @@ params:
 
     # profile-mode
     profileMode:
-        enabled: false # needs to be explicitly set
-        title: ExampleSite
+        enabled: true # needs to be explicitly set
+        title: 朝花夕拾
         # imageUrl: '<img location>'
         # imageTitle: my image
         buttons:
@@ -52,18 +52,11 @@ params:
             - name: Tags
               url: tags
 
-    # home-info mode
-    homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to my blog
-
     socialIcons:
         - name: twitter
-          url: "https://twitter.com/"
-        - name: stackoverflow
-          url: "https://stackoverflow.com"
+          url: "https://twitter.com/caixudong"
         - name: github
-          url: "https://github.com/"
+          url: "https://github.com/fifsky"
 
 menu:
     main:
