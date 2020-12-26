@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fifsky.com/</loc>
-    <lastmod>2020-12-24T11:30:03+80:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.fifsky.com/tags/first/</loc>
     <lastmod>2020-12-24T11:30:03+80:00</lastmod>
   </url>
@@ -29,6 +24,11 @@
   
   <url>
     <loc>https://blog.fifsky.com/tags/</loc>
+    <lastmod>2020-12-24T11:30:03+80:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.fifsky.com/</loc>
     <lastmod>2020-12-24T11:30:03+80:00</lastmod>
   </url>
   
