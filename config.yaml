@@ -1,6 +1,6 @@
 baseURL: "https://blog.fifsky.com"
 languageCode: "zh-CN"
-title: BLOG
+title: 朝花夕拾
 paginate: 5
 theme: papermod
 
@@ -15,8 +15,8 @@ minify:
 
 params:
     env: production
-    title: Doing is better than saying.
-    description: "ExampleSite description"
+    title: 朝花夕拾
+    description: "Doing is better than saying."
     author: fifsky
 
     images: "<link or path of image for opengraph, twitter-cards>"
