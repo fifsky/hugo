@@ -1,16 +1,8 @@
 ---
 title: "Hello Blog"
 date: 2020-12-24T11:30:03+80:00
-weight: 1
-aliases: ["news"]
 tags: ["first"]
-author: "fifsky"
-showToc: true
-TocOpen: false
-draft: false
-hidemeta: false
-disableShare: false
-comments: false
+comments: true
 ---
 
 
