@@ -16,6 +16,7 @@ minify:
 params:
     env: production
     title: 朝花夕拾
+    cdnURL: https://cdn.statically.io/gh/fifsky/hugo/gh-pages
     description: "Doing is better than saying."
     author: fifsky
 
