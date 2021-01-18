@@ -35,6 +35,7 @@ params:
         favicon32x32: "logo.png"
         apple_touch_icon: "logo.png"
         safari_pinned_tab: "logo.png"
+        disableFingerprinting: true
 
     label:
         text: "Home"
