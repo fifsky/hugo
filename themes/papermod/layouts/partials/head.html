@@ -29,10 +29,10 @@
 
 {{- if not .Site.Params.assets.disableFingerprinting }}
 {{- $stylesheet := $stylesheet | fingerprint -}}
-<link href="{{ $stylesheet.Permalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet"
+<link href="{{ if .Site.Params.cdnURL | and hugo.IsProduction -}}{{ trim .Site.Params.cdnURL " " }}{{ $stylesheet.RelPermalink }}{{- else }}{{ $stylesheet.Permalink }}{{- end -}}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet"
     as="style">
 {{- else}}
-<link href="{{ $stylesheet.Permalink }}" rel="preload stylesheet" as="style">
+<link href="{{ if .Site.Params.cdnURL | and hugo.IsProduction -}}{{ trim .Site.Params.cdnURL  " " }}{{ $stylesheet.RelPermalink }}{{- else }}{{ $stylesheet.Permalink }}{{- end -}}" rel="preload stylesheet" as="style">
 {{- end}}
 <!-- Search -->
 {{- if (eq .Layout `search`) -}}
