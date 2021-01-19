@@ -1,3 +1,4 @@
+
 {{- define "main" }}
 
 {{- if (and .Site.Params.profileMode.enabled .IsHome) }}
@@ -31,7 +32,8 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 <article class="{{ $class }}">
-  {{- partial "cover.html" (dict "cxt" . "IsHome" true) }}
+  {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList)}}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
   <header class="entry-header">
     <h2>
       {{ .Title }}

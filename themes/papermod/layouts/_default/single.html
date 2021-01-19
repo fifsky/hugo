@@ -6,7 +6,10 @@
       {{ .Title }}
       {{- if .Draft }}<div class="entry-isdraft"><sup>&nbsp;&nbsp;[draft]</sup></div>{{- end }}
     </h1>
-    {{- if .Params.hideMeta }}{{ else }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- if not (.Param "hideMeta") }}
     <div class="post-meta">
       {{- partial "post_meta.html" . -}}
       {{- if .IsTranslated -}}&nbsp;|&nbsp;
@@ -28,16 +31,17 @@
     </div>
     {{- end}}
   </header>
-  {{- partial "cover.html" (dict "cxt" . "IsHome" false) }}
-  {{- if .Params.ShowToc }}
+  {{- $isHidden := ((.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInSingle) | default .Params.cover.hidden )}}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
+  {{- if (.Param "ShowToc") }}
   <div class="toc">
-    <details {{if .Params.TocOpen }} open{{ end }}>
-      <summary accesskey="c" title="(Alt + C)">
-        <div class="details">{{- i18n "toc" | default "Table of Contents" }}</div>
-      </summary>
-      <blockquote>
-        {{- partial "toc.html" . }}
-      </blockquote>
+    <details {{if (.Param "TocOpen") }} open{{ end }}>
+    <summary accesskey="c" title="(Alt + C)">
+      <div class="details">{{- i18n "toc" | default "Table of Contents" }}</div>
+    </summary>
+    <blockquote>
+      {{- partial "toc.html" . }}
+    </blockquote>
     </details>
   </div>
   {{- end }}
@@ -57,7 +61,7 @@
     {{- end }}
   </footer>
 
-  {{- if and ($.Site.Params.comments) (ne .Params.comments false) }}
+  {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
   {{- end }}
 </article>
