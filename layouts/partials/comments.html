@@ -1,11 +1,12 @@
 <!-- Comments area start -->
-<div class="utterances">
-<script src="https://utteranc.es/client.js"
-        repo="fifsky/hugo"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '9Q1dx0bmWS7coRUGAQYkyvU0-9Nh9j0Va',
+        appKey: 'euALOCVAR4fXcLabldQmuqB5',
+        recordIP: true,
+        requiredFields: ['nick','mail'],
+    })
 </script>
-</div>
 <!-- Comments area end -->
