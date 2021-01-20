@@ -16,7 +16,7 @@ minify:
 params:
     env: production
     title: 朝花夕拾
-    cdnURL: https://cdn.statically.io/gh/fifsky/hugo/gh-pages
+    cdnURL: https://static.fifsky.com/hugo
     description: "Doing is better than saying."
     author: fifsky
 
@@ -30,11 +30,11 @@ params:
     disableSpecial1stPost: false
  
     assets:
-        favicon: "https://cdn.statically.io/gh/fifsky/hugo/gh-pages/logo.png"
-        favicon16x16: "https://cdn.statically.io/gh/fifsky/hugo/gh-pages/logo.png"
-        favicon32x32: "https://cdn.statically.io/gh/fifsky/hugo/gh-pages/logo.png"
-        apple_touch_icon: "https://cdn.statically.io/gh/fifsky/hugo/gh-pages/logo.png"
-        safari_pinned_tab: "https://cdn.statically.io/gh/fifsky/hugo/gh-pages/logo.png"
+        favicon: "https://static.fifsky.com/hugo/logo.png"
+        favicon16x16: "https://static.fifsky.com/hugo/logo.png"
+        favicon32x32: "https://static.fifsky.com/hugo/logo.png"
+        apple_touch_icon: "https://static.fifsky.com/hugo/logo.png"
+        safari_pinned_tab: "https://static.fifsky.com/hugo/logo.png"
         disableFingerprinting: true
 
     label:
