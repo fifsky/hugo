@@ -10,63 +10,63 @@ buildFuture: false
 buildExpired: false
 
 minify:
-    disableXML: true
-    minifyOutput: true
+  disableXML: true
+  minifyOutput: true
 
 params:
-    env: production
+  env: production
+  title: 朝花夕拾
+  cdnURL: https://static.fifsky.com/hugo
+  description: "Doing is better than saying."
+  author: fifsky
+
+  images: "<link or path of image for opengraph, twitter-cards>"
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  comments: true
+  defaultTheme: auto
+  disableThemeToggle: false
+  disableSpecial1stPost: false
+
+  assets:
+    favicon: "https://static.fifsky.com/hugo/logo.png"
+    favicon16x16: "https://static.fifsky.com/hugo/logo.png"
+    favicon32x32: "https://static.fifsky.com/hugo/logo.png"
+    apple_touch_icon: "https://static.fifsky.com/hugo/logo.png"
+    safari_pinned_tab: "https://static.fifsky.com/hugo/logo.png"
+    disableFingerprinting: true
+
+  label:
+    text: "Home"
+    icon: https://static.fifsky.com/hugo/logo.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
     title: 朝花夕拾
-    cdnURL: https://static.fifsky.com/hugo
-    description: "Doing is better than saying."
-    author: fifsky
+    # imageUrl: '<img location>'
+    # imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: About
+        url: about
 
-    images: "<link or path of image for opengraph, twitter-cards>"
-
-    ShowReadingTime: true
-    ShowShareButtons: true
-    comments: true
-    defaultTheme: auto
-    disableThemeToggle: false
-    disableSpecial1stPost: false
- 
-    assets:
-        favicon: "https://static.fifsky.com/hugo/logo.png"
-        favicon16x16: "https://static.fifsky.com/hugo/logo.png"
-        favicon32x32: "https://static.fifsky.com/hugo/logo.png"
-        apple_touch_icon: "https://static.fifsky.com/hugo/logo.png"
-        safari_pinned_tab: "https://static.fifsky.com/hugo/logo.png"
-        disableFingerprinting: true
-
-    label:
-        text: "Home"
-        icon: /logo.png
-        iconHeight: 35
-
-    # profile-mode
-    profileMode:
-        enabled: true # needs to be explicitly set
-        title: 朝花夕拾
-        # imageUrl: '<img location>'
-        # imageTitle: my image
-        buttons:
-            - name: Posts
-              url: posts
-            - name: About
-              url: about
-
-    socialIcons:
-        - name: twitter
-          url: "https://twitter.com/caixudong"
-        - name: github
-          url: "https://github.com/fifsky"
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/caixudong"
+    - name: github
+      url: "https://github.com/fifsky"
 
 menu:
-    main:
-        - identifier: archive
-          name: Archive
-          url: /archives/
-          weight: 10
-        - identifier: tags
-          name: Tags
-          url: /tags/
-          weight: 20
+  main:
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
