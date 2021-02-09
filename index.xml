@@ -8,12 +8,24 @@
     <language>zh-CN</language>
     <lastBuildDate>Thu, 24 Dec 2020 11:30:03 +8000</lastBuildDate><atom:link href="https://blog.fifsky.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>关于我</title>
+      <title>旅行</title>
+      <link>https://blog.fifsky.com/travel/</link>
+      <pubDate>Tue, 09 Feb 2021 14:30:03 +8000</pubDate>
+      
+      <guid>https://blog.fifsky.com/travel/</guid>
+      <description>   目的地 游记 打卡时间     杭州灵隐寺 未完成 未完成   云南丽江 未完成 未完成   天府之国四川成都 未完成 未完成                   </description>
+    </item>
+    
+    <item>
+      <title>关于旅行</title>
       <link>https://blog.fifsky.com/about/</link>
       <pubDate>Thu, 24 Dec 2020 11:30:03 +8000</pubDate>
       
       <guid>https://blog.fifsky.com/about/</guid>
-      <description>我和我的祖国</description>
+      <description>从明天起，做一个幸福的人
+喂马、劈柴，周游世界
+从明天起，关心粮食和蔬菜
+我有一所房子，面朝大海，春暖花开</description>
     </item>
     
     <item>
