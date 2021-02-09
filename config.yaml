@@ -49,9 +49,11 @@ params:
     # imageUrl: '<img location>'
     # imageTitle: my image
     buttons:
-      - name: Posts
+      - name: 游记
         url: posts
-      - name: About
+      - name: 旅行
+        url: travel
+      - name: 关于
         url: about
 
   socialIcons:
