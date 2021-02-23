@@ -72,3 +72,7 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
+    - identifier: favorite
+      name: Favorite
+      url: /favorite
+      weight: 30
